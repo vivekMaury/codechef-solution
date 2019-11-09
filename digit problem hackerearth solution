@@ -1,0 +1,10 @@
+n, k = input().split()
+l = list(n)
+k = int(k)
+for i in range(k):
+    for j in range(len(n)):
+        if(int(l[j]) != 9):
+            l[j] ='9'
+            break
+        
+print("".join(l))
